@@ -9,13 +9,11 @@ import edu.farmingdale.draganddropanim_demo.ui.theme.DragAndDropAnim_DemoTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        enableEdgeToEdge() // This ensures the content can extend edge-to-edge, removing padding.
         setContent {
             DragAndDropAnim_DemoTheme {
-
-                    DragAndDropBoxes()
-
-
+                // Calling the DragAndDropBoxes composable here
+                DragAndDropBoxes()
             }
         }
     }
@@ -23,8 +21,8 @@ class MainActivity : ComponentActivity() {
 
 
 
-// This should be completed in a group setting
-// ToDo x: Analyze the requirements for Individual Project 3
+
+
 // ToDo x: Show the DragAndDropBoxes composable
 // ToDo x: Change the circle to a rect
 // ToDo x: Replace the command right with a image or icon
